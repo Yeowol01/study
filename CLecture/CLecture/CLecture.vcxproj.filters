@@ -15,8 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="(2023.07.12)변수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Source.c">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
