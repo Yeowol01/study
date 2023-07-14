@@ -1,3 +1,4 @@
+#pragma once
 #include <stdio.h>
 
 // stdio
@@ -20,13 +21,13 @@ void main()
 	// double <-> 실수형 (8 byte)
 
 	//char alphabet = 'A';
-	
+
 	//int data = 10;
-	
+
 	//float decimal = 12.5f;
-	
+
 	//double value = 99.75;
-	
+
 	// 변수를 출력하는 방법
 	// "%c"  : 하나의 문자를 출력하는 서식 지정자
 	// "%d"  : 변수를 출력하는 서식 지정자
@@ -129,16 +130,16 @@ void main()
 
 	// 1. printf(          ,변수 + 변수);
 	printf("%d\n", a1 + a2);
-	 
+
 	// 2. printf(          ,변수 + 리터럴 상수);
 	printf("%d\n", a1 + 10);
-	 
+
 	// 3. printf(          ,변수 - 심볼릭 상수);
 	printf("%d\n", a1 - a3);
-	
+
 	// 4. printf(          ,리터럴 상수 * 심볼릭 상수);
 	printf("%d\n", 10 * a3);
-	 
+
 	// 5. printf(          ,심볼릭 상수 / 심볼릭 상수 );
 	printf("%d\n", a3 / a3);
 
@@ -154,6 +155,7 @@ void main()
 
 
 }
+
 
 
 
