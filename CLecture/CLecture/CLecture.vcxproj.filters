@@ -30,6 +30,9 @@
     <ClInclude Include="(2023.07.18) 반복문.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.07.19) 자료형 변환.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
