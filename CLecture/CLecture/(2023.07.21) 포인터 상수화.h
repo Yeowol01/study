@@ -31,17 +31,24 @@ void main()
 	// 상수 지시 포인터
 	/*/
 	int hp = 100;
+	int mp = 50;
 
 	const int* cPtr = &hp;
+
+	printf("cPtr이 가리키는 값 : %d\n", *cPtr);
 
 	// 포인터 변수를 상수로 선언하여, 포인터가 변수가 가리키고 있는 주소에 존재하는 값을 변경할 수 없습니다.
 	// *cPtr = 999; (ERROR)
 
-	cPtr = &hp;
+	cPtr = &mp;
+
+	mp = 999;
+
+	printf("cPtr이 가리키는 값 : %d\n", *cPtr);
 
 	// 포인터로 참조되어 있는 변수는 상수화에 대한 영향을 받지 않습니다.
 
-	printf("cPtr이 가리키는 값 : %d\n", *cPtr);
+	//printf("cPtr이 가리키는 값 : %d\n", *cPtr);
 	/*/
 
 	// 상수 포인터
