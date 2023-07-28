@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Game Function">
+      <UniqueIdentifier>{4184bce8-cd50-48bd-a222-a20f09d65f46}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="(2023.07.12)변수.h">
@@ -46,6 +49,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="(2023.07.26) 재귀 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.07.27) 인라인 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Game Function</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlSound.h">
+      <Filter>Game Function</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.07.28) 변수의 범위.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
