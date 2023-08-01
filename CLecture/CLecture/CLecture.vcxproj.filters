@@ -63,9 +63,12 @@
     <ClInclude Include="(2023.07.28) 변수의 범위.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.07.31) 동적 할당.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="Source.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
