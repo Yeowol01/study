@@ -1,135 +1,75 @@
 #include <stdio.h>
-#include <limits.h>
-
-#pragma region 열거형
-
-	// 명명된 정수형 상수의 집합입니다.
-
-enum State
-{
-	IDLE,
-	ATTACK = 100,
-	DIE
-
-	// enum에 설정된 값을 변경할 수 있으며, 중간에 값을 변경했을 때 그다음으로 설정된 값은 변경한 이후의 값에 +1로 설정됩니다.
-};
-
-#pragma endregion
 
 
 int main()
 {
-#pragma region 열거형
+#pragma region 이중 포인터
 	/*/
-	enum State state;
+	int data = 100;
 
-	//state = IDLE;
-	//printf("state IDLE 값 : %d\n", state);
-
-	//state = ATTACK;
-	//printf("state ATTACK 값 : %d\n", state);
-
-	//state = DIE;
-	//printf("state DIE 값 : %d\n", state);
-
-	state = DIE;
-
-	switch (state)
-	{
-	case IDLE : printf("대기 상태\n");
-		break;
-	case ATTACK: printf("공격 상태\n");
-		break;
-	case DIE: printf("죽음 상태\n");
-		break;
-	}
-	/*/
-#pragma endregion
-
-#pragma region 별 출력하기
-	/*/
-	// *
-	// **
-	// ***
-	// ****
-	// *****
-
-	for (int i = 0; i < 5; i++)
-	{
-		for (int j = 0; j <= i; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	/*/
-#pragma endregion
-
-#pragma region 1~10까지의 합
-	/*/
-	int result = 0;
-
-	for (int i = 1; i <= 10; i++)
-	{
-		result += i;
-	}
-
-	printf("1에서 10까지의 합 : %d \n", result);
-	/*/
-#pragma endregion
-
-#pragma region ASCII 코드
-	/*/
-	// 1963년 미국 ANSI에서 표준화한 정보교환용 7비트 부호체계이다.
-
-	// 128개의 숫자, 문자, 특수문자, 제어문자가 표현됩니다.
-
-	char alphabet = 65;
-
-	printf("alphabet 변수의 ASCII 코드의 값 : %c\n", alphabet);
-	printf("alphabet 변수의 값 : %d\n", alphabet);
-
-	// A <- 
-	//
-	// Z
-
-	for (alphabet; alphabet <=90; alphabet++)
-	{
-		printf("alphabet %c\n", alphabet);
-	}
-
-	for (int i = 0; i <= 25; i++)
-	{
-		printf("alphabet %c\n", 'A' + i);
-	}
-	/*/
-
-#pragma endregion
-
-#pragma region 최솟값과 최댓값
-	/*/
-	//[10] [5] [11] [1] [3]
-
-	int array[5] = { 10,5,11,1,3 };
+	int* ptr1 = &data;
 	
-	int max = 0;
-	int min = INT_MAX;
+	int** ptr2 = &ptr1;
 
-	for (int i = 0; i < 5; i++)
+	**ptr2 = 999;
+
+	printf("data의 값 : %d\n", data);
+	printf("**ptr2의 값 : %d\n", **ptr2);
+	/*/
+
+	/*/
+	int a = 10;
+	int b = 20;
+
+	int* aPtr1 = &a;
+	int** aPtr2 = &aPtr1;
+
+	int* bPtr1 = &b;
+	int** bPtr2 = &bPtr1;
+
+	int* temp= *bPtr2;
+	*bPtr2 = *aPtr2;
+	*aPtr2 = temp;
+
+	printf("**aPtr2가 가리키는 값 : %d\n", **aPtr2);
+	printf("**bPtr2가 가리키는 값 : %d\n", **bPtr2);
+	/*/
+
+#pragma endregion
+
+#pragma region 약수
+	
+	/*/
+	int num;
+	printf("입력할 숫자");
+	scanf_s("%d", &num);
+
+	printf("%d의 약수\n", num);
+	for (int i = 1; i <= num; i++)
 	{
-		if (max < array[i])
+		if (num % i == 0)
 		{
-			max = array[i];
-		}
-		if (min > array[i])
-		{
-			min = array[i];
+			printf("%d\n", i);
 		}
 	}
-	printf("최댓값은 %d 입니다.\n", max);
-	printf("최솟값은 %d 입니다.\n", min);
+	/*/
+
+	// 강사님 방법
+	/*/
+	int value = 0;
+	
+	scanf_s("%d", &value);
+
+	for (int i = 1; i <= value; i++)
+	{
+		if (value % i == 0)
+		{
+			printf("%d ", i);
+		}
+	}
 	/*/
 #pragma endregion
+
 
 
 	return 0;
