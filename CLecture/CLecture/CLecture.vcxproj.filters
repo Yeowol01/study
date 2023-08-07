@@ -75,6 +75,9 @@
     <ClInclude Include="(2023.08.03) ASCII 코드.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.08.04) 이중 포인터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
